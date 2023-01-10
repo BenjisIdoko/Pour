@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pour User</title>
+    <link rel="preload" href="assets/fonts/ProductSans-Regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="assets/fonts/ProductSans-Bold.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="stylesheet" href="assets/css/input.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 
@@ -211,9 +213,6 @@
                         </div>
 
                     </div>
-
-
-
                 </div>
                 <div class="min-h-screen">
                     <div class="flex justify-around my-5">
@@ -225,7 +224,18 @@
                         <a class="border-r-2 mr-2 px-2 border-r-red-400" href="">Marital Status</a>
                         <a class="border-r-2 mr-2 px-2 border-r-red-400" href="">Place Of Birth</a>
                         <a class="border-r-2 mr-2 px-2 border-r-red-400" href="">Place Of Residence</a>
-                        <a class="border-r-2 mr-2 px-2 border-r-red-400" href="">Date Of Birth</a>
+                        <a class="border-r-2 mr-2 px-2 border-r-red-400" href="">Date Of Birth</a> 
+                    </div>
+                    <div class="flex justify-around my-5">
+                        <a class="border-r-2 mr-2 px-2 border-r-red-400" href="#personal">Language Pro</a>
+                        <a class="border-r-2 mr-2 px-2 border-r-red-400" href="">Next of KIN</a>
+                        <a class="border-r-2 mr-2 px-2 border-r-red-400" href="">Date of Birth</a>
+                        <a class="border-r-2 mr-2 px-2 border-r-red-400" href="">Genotype</a>
+                        <a class="border-r-2 mr-2 px-2 border-r-red-400" href="">Blood Group</a>
+                        <a class="border-r-2 mr-2 px-2 border-r-red-400" href="">Marital Status</a>
+                        <a class="border-r-2 mr-2 px-2 border-r-red-400" href="">Place Of Birth</a>
+                        <a class="border-r-2 mr-2 px-2 border-r-red-400" href="">Place Of Residence</a>
+                        <a class="border-r-2 mr-2 px-2 border-r-red-400" href="">Date Of Birth</a> 
                     </div>
                     <!--Personal Info-->
                     <div id="personal" class="mt-10 sm:mt-0">
@@ -440,21 +450,21 @@
                                                             </label>
                                                         </div>
                                                         <div class="flex items-center">
-                                                            <input id="push-email" name="push-notifications"
+                                                            <input id="average" name="wie"
                                                                 type="radio"
                                                                 class="">
-                                                            <label for="push-email"
+                                                            <label for="average"
                                                                 class="ml-3 block text-sm font-medium text-gray-700">
                                                                 Average
                                                             </label>
                                                         </div>
                                                         <div class="flex items-center">
-                                                            <input id="push-nothing" name="push-notifications"
+                                                            <input id="no" name="wie"
                                                                 type="radio"
                                                                 class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
-                                                            <label for="push-nothing"
+                                                            <label for="no"
                                                                 class="ml-3 block text-sm font-medium text-gray-700">
-                                                                Not At all
+                                                                Not at all
                                                             </label>
                                                         </div>
                                                     </div>
@@ -469,30 +479,30 @@
                                                     </div>
                                                     <div class="mt-4 space-y-4">
                                                         <div class="flex items-center">
-                                                            <input id="push-everything" name="push-notifications"
+                                                            <input id="verywell" name="soe"
                                                                 type="radio"
-                                                                class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
-                                                            <label for="push-everything"
+                                                                class="">
+                                                            <label for="verywell"
                                                                 class="ml-3 block text-sm font-medium text-gray-700">
-                                                                Everything
+                                                                Very well
                                                             </label>
                                                         </div>
                                                         <div class="flex items-center">
-                                                            <input id="push-email" name="push-notifications"
+                                                            <input id="average" name="soe"
                                                                 type="radio"
-                                                                class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
-                                                            <label for="push-email"
+                                                                class="">
+                                                            <label for="average"
                                                                 class="ml-3 block text-sm font-medium text-gray-700">
-                                                                Same as email
+                                                                Average
                                                             </label>
                                                         </div>
                                                         <div class="flex items-center">
-                                                            <input id="push-nothing" name="push-notifications"
+                                                            <input id="no" name="soe"
                                                                 type="radio"
-                                                                class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
-                                                            <label for="push-nothing"
+                                                                class="">
+                                                            <label for="no"
                                                                 class="ml-3 block text-sm font-medium text-gray-700">
-                                                                No push notifications
+                                                                Not at all
                                                             </label>
                                                         </div>
                                                     </div>

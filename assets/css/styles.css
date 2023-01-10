@@ -43,10 +43,29 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-family: 'Product Sans', sans-serif;
+  /* font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
+}
+@font-face {
+  font-family: 'Product Sans';
+  src: url('../fonts/ProductSans-Regular.woff2') format('woff2'),
+      url('../fonts/ProductSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Product Sans';
+  src: url('../fonts/ProductSans-Bold.woff2') format('woff2'),
+      url('../fonts/ProductSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 /*
@@ -1154,10 +1173,6 @@ select {
   width: 24rem;
 }
 
-.w-9 {
-  width: 2.25rem;
-}
-
 .w-10 {
   width: 2.5rem;
 }
@@ -1180,6 +1195,10 @@ select {
 
 .w-4 {
   width: 1rem;
+}
+
+.w-9 {
+  width: 2.25rem;
 }
 
 .w-16 {
@@ -1577,6 +1596,11 @@ select {
 .bg-blue-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
+.bg-indigo-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(199 210 254 / var(--tw-bg-opacity));
 }
 
 .bg-gray-50 {

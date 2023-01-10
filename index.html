@@ -6,12 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preload" href="assets/fonts/ProductSans-Regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="assets/fonts/ProductSans-Bold.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="stylesheet" href="assets/css/input.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
 
 </head>
 
-<body class="overflow-y-hidden bg-gray-100">
+<body class="overflow-y-hidden bg-slate-100">
     <div class="flex w-screen h-screen text-gray-700">
 
         <!-- Component Start -->
@@ -68,7 +70,7 @@
 
         </div>
         <!--Sidebar Ends Here-->
-       
+
         <!--Main content Starts-->
         <div class="flex flex-col flex-grow overflow-auto overflow-x-hidden w-3/4 ">
             <!--Top Navbar-->
@@ -77,33 +79,42 @@
                 <span class="ml-5 relative w-96">
 
                     <div class="flex absolute left-0 top-0 bottom-0 pl-3 items-center ">
-                        <img src="assets/img/search.svg" class="w-9 pl-3 items-center flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                            <title>search</title>
+                            <g fill="#212121" class="nc-icon-wrapper">
+                                <path
+                                    d="M28.933 27.733L24 22.8c1.6-2 2.667-4.667 2.667-7.467 0-6.666-5.334-12-12-12s-12 5.334-12 12c0 6.667 5.333 12 12 12 2.8 0 5.466-.933 7.466-2.666l4.934 4.933c.266.267.666.4.933.4s.667-.133.933-.4a1.289 1.289 0 0 0 0-1.867zm-23.6-12.4c0-5.2 4.134-9.333 9.334-9.333S24 10.133 24 15.333c0 2.534-1.067 4.934-2.667 6.534-1.733 1.733-4 2.666-6.533 2.666-5.333.134-9.467-4-9.467-9.2z"
+                                    fill="#212121">
+
+                                </path>
+                            </g>
+                        </svg>
                     </div>
                     <input
                         class="pl-16 h-11 relative mt-1 block mr-2 border-solid bg-slate-100 rounded-md text-slate-500"
                         type="search" placeholder="search here">
 
                 </span>
-               
-                    <button class="h-10 px-4 ml-auto text-sm font-medium rounded hover:bg-gray-300">
-                        Action 1
-                    </button>
-                    <button class="h-10 px-4 ml-2 text-sm font-medium bg-gray-200 rounded hover:bg-gray-300">
-                        Action 2
-                    </button>
-    
-                    <button class="relative ml-2 text-sm focus:outline-none group">
-                        <div class="w-10 h-10 rounded-full">
-                            <img class="rounded-full h-10 w-10" src="assets/img/benjis.jpg">
-                        </div>
-                        <div
-                            class="absolute right-0 flex-col items-start hidden w-40 pb-1 mt-5 bg-white border rounded-lg border-gray-300 shadow-lg group-focus:flex">
-                            <a class="w-full px-4 py-2 text-left hover:bg-gray-300" href="#">Menu Item 1</a>
-                            <a class="w-full px-4 py-2 text-left hover:bg-gray-300" href="#">Menu Item 1</a>
-                            <a class="w-full px-4 py-2 text-left hover:bg-gray-300" href="#">Menu Item 1</a>
-                        </div>
-                    </button>
-                    
+
+                <button class="h-10 px-4 ml-auto text-sm font-medium rounded hover:bg-gray-300">
+                    Action 1
+                </button>
+                <button class="h-10 px-4 ml-2 text-sm font-medium bg-gray-200 rounded hover:bg-gray-300">
+                    Action 2
+                </button>
+
+                <button class="relative ml-2 text-sm focus:outline-none group">
+                    <div class="w-10 h-10 rounded-full">
+                        <img class="rounded-full h-10 w-10" src="assets/img/benjis.jpg">
+                    </div>
+                    <div
+                        class="absolute right-0 flex-col items-start hidden w-40 pb-1 mt-5 bg-white border rounded-lg border-gray-300 shadow-lg group-focus:flex">
+                        <a class="w-full px-4 py-2 text-left hover:bg-gray-300" href="#">Menu Item 1</a>
+                        <a class="w-full px-4 py-2 text-left hover:bg-gray-300" href="#">Menu Item 1</a>
+                        <a class="w-full px-4 py-2 text-left hover:bg-gray-300" href="#">Menu Item 1</a>
+                    </div>
+                </button>
+
             </div>
             <!--Top Navbar End-->
             <div class="flex-grow py-8 overflow-auto bg-gray-200 px-8">
@@ -613,8 +624,8 @@
 
             </div>
         </div>
-        
-        </div>
+
+    </div>
     </div>
 
     <!--Main content ends-->
