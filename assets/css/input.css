@@ -18,7 +18,7 @@
         [multiple],
         textarea,
         select{
-            @apply mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border border-slate-300 rounded-md !important;
+            @apply mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border md:text-base border-slate-300 rounded-md !important;
           }
           [type='checkbox'],
           [type='radio'] {
