@@ -20,7 +20,7 @@
         <!-- Component Start -->
 
         <!--Sidebar Starts Here-->
-        <div class="flex flex-col bg-white border-r border-gray-300">
+        <div class="flex flex-col bg-white border-r border-gray-300 md:flex sm:hidden">
             <div class="flex p-4">
                 <img src="assets/img/logo.png" width="150px">
             </div>
@@ -97,10 +97,10 @@
 
                 </span>
 
-                <button class="h-10 px-4 ml-auto text-sm font-medium rounded hover:bg-gray-300">
+                <button class="h-10 px-4 ml-auto text-base font-medium rounded hover:bg-gray-300 sm:hidden">
                     Action 1
                 </button>
-                <button class="h-10 px-4 ml-2 text-sm font-medium bg-gray-200 rounded hover:bg-gray-300">
+                <button class="h-10 px-4 ml-2 text-sm font-medium bg-gray-200 rounded hover:bg-gray-300 sm:hidden">
                     Action 2
                 </button>
 
@@ -120,8 +120,8 @@
             <!--Top Navbar End-->
             <div class="flex-grow py-8 overflow-auto bg-gray-200 px-8">
                 <!--Card Stats-->
-                <div class="flex gap-4">
-                    <div class=" p-6 bg-white border mt-8 border-gray-200 rounded-lg shadow-md">
+                <div class="md:flex gap-4">
+                    <div class="p-6 bg-white border mt-8 border-gray-200 rounded-lg shadow-md">
                         <svg class="w-10 h-10 mb-2 text-gray-500 dark:text-gray-400" aria-hidden="true"
                             fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd"
@@ -131,8 +131,8 @@
                         </svg>
                         <div>
                             <h1 class="text-3xl font-bold">600K</h1>
-                            <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900">
-                                Total Users</h5>
+                            <h5 class="mb-2 text-lg font-semibold tracking-tight text-gray-900">
+                                Total Registrants</h5>
                         </div>
                         <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Go to this step by step
                             guideline process on how to certify for your weekly benefits:</p>
@@ -149,7 +149,7 @@
                             </svg>
                         </a>
                     </div>
-                    <div class="max-w-sm p-6 bg-white border mt-8 border-gray-200 rounded-lg shadow-md">
+                    <div class="p-6 bg-white border mt-8 border-gray-200 rounded-lg shadow-md">
                         <svg class="w-10 h-10 mb-2 text-gray-500 dark:text-gray-400" aria-hidden="true"
                             fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd"
@@ -159,7 +159,7 @@
                         </svg>
                         <div>
                             <h1 class="text-3xl font-bold">600K</h1>
-                            <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900">
+                            <h5 class="mb-2 text-lg font-semibold tracking-tight text-gray-900">
                                 Total Males</h5>
                         </div>
                         <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Go to this step by step
@@ -177,7 +177,7 @@
                             </svg>
                         </a>
                     </div>
-                    <div class="max-w-sm p-6 bg-white border mt-8 border-gray-200 rounded-lg shadow-md">
+                    <div class="p-6 bg-white border mt-8 border-gray-200 rounded-lg shadow-md">
                         <svg class="w-10 h-10 mb-2 text-gray-500 dark:text-gray-400" aria-hidden="true"
                             fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd"
@@ -187,7 +187,7 @@
                         </svg>
                         <div>
                             <h1 class="text-3xl font-bold">600K</h1>
-                            <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900">
+                            <h5 class="mb-2 text-lg font-semibold tracking-tight text-gray-900">
                                 Total Females</h5>
                         </div>
                         <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Go to this step by step
@@ -219,7 +219,7 @@
 
                         </div>
 
-                        <div class="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto">
+                        <div class="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto hidden md:block">
                             <div class="inline-block min-w-full shadow-md rounded-lg overflow-hidden">
                                 <table class="min-w-full leading-normal">
                                     <thead>
@@ -429,8 +429,8 @@
                     <div>
                         <h2 class="text-2xl font-semibold leading-tight mb-2">News</h2>
                     </div>
-                    <div class="flex gap-4">
-                        <div class="w-1/2 p-6 mt-8 py-2 flex flex-col bg-white
+                    <div class="md:flex gap-4">
+                        <div class="p-6 mt-8 py-2 flex flex-col bg-white
                          rounded-lg">
 
                             <!-- Card list container -->
@@ -584,7 +584,7 @@
 
                         </div>
 
-                        <div class="w-1/2 p-6 mt-8 py-2 flex flex-col
+                        <div class=" p-6 mt-8 py-2 flex flex-col
                         bg-purple-300 rounded-lg text-white">
 
                             <h3 class="flex items-center pt-1 pb-1 px-8 text-lg font-bold

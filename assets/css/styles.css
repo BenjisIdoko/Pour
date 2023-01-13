@@ -654,6 +654,27 @@ select {
   }
 }
 
+@media (min-width: 768px) {
+  [type='text'],
+        [type='email'],
+        [type='url'],
+        [type='password'],
+        [type='number'],
+        [type='date'],
+        [type='datetime-local'],
+        [type='month'],
+        [type='search'],
+        [type='tel'],
+        [type='time'],
+        [type='week'],
+        [multiple],
+        textarea,
+        select {
+    font-size: 1rem !important;
+    line-height: 1.5rem !important;
+  }
+}
+
 [type='checkbox'],
           [type='radio'] {
   height: 1rem;
@@ -856,12 +877,12 @@ select {
   top: 0.75rem;
 }
 
-.z-20 {
-  z-index: 20;
-}
-
 .z-30 {
   z-index: 30;
+}
+
+.z-20 {
+  z-index: 20;
 }
 
 .z-10 {
@@ -1043,6 +1064,10 @@ select {
   margin-bottom: -0.5rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .mb-5 {
   margin-bottom: 1.25rem;
 }
@@ -1179,10 +1204,6 @@ select {
   width: 1.5rem;
 }
 
-.w-1\/2 {
-  width: 50%;
-}
-
 .w-4 {
   width: 1rem;
 }
@@ -1201,6 +1222,10 @@ select {
 
 .w-24 {
   width: 6rem;
+}
+
+.w-1\/2 {
+  width: 50%;
 }
 
 .w-1\/4 {
@@ -1298,6 +1323,10 @@ select {
   align-content: center;
 }
 
+.content-end {
+  align-content: flex-end;
+}
+
 .items-start {
   align-items: flex-start;
 }
@@ -1326,16 +1355,16 @@ select {
   gap: 1.5rem;
 }
 
-.space-y-6 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
-}
-
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.space-y-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
 .space-y-1 > :not([hidden]) ~ :not([hidden]) {
@@ -1516,6 +1545,11 @@ select {
 .border-red-500 {
   --tw-border-opacity: 1;
   border-color: rgb(239 68 68 / var(--tw-border-opacity));
+}
+
+.border-\[\#1c3559\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(28 53 89 / var(--tw-border-opacity));
 }
 
 .border-r-red-400 {
@@ -1950,6 +1984,10 @@ select {
   padding-bottom: 1rem;
 }
 
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1976,6 +2014,11 @@ select {
   line-height: 1.75rem;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -1989,11 +2032,6 @@ select {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
 }
 
 .text-xl {
@@ -2204,6 +2242,11 @@ select {
   color: rgb(133 77 14 / var(--tw-text-opacity));
 }
 
+.text-\[\#1c3349\] {
+  --tw-text-opacity: 1;
+  color: rgb(28 51 73 / var(--tw-text-opacity));
+}
+
 .no-underline {
   text-decoration-line: none;
 }
@@ -2365,6 +2408,11 @@ select {
 .hover\:bg-blue-800:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(30 64 175 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-indigo-200:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(199 210 254 / var(--tw-bg-opacity));
 }
 
 .hover\:text-gray-700:hover {
@@ -2694,12 +2742,16 @@ select {
 }
 
 @media (min-width: 360px) {
-  .sm\:col-span-3 {
-    grid-column: span 3 / span 3;
+  .sm\:col-span-1 {
+    grid-column: span 1 / span 1;
   }
 
   .sm\:col-span-2 {
     grid-column: span 2 / span 2;
+  }
+
+  .sm\:col-span-3 {
+    grid-column: span 3 / span 3;
   }
 
   .sm\:-mx-8 {
@@ -2723,10 +2775,6 @@ select {
 
   .sm\:block {
     display: block;
-  }
-
-  .sm\:flex {
-    display: flex;
   }
 
   .sm\:hidden {
@@ -2786,6 +2834,11 @@ select {
     line-height: 1.25rem;
   }
 
+  .sm\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
   .sm\:leading-5 {
     line-height: 1.25rem;
   }
@@ -2841,6 +2894,10 @@ select {
     margin-top: 0.5rem;
   }
 
+  .md\:block {
+    display: block;
+  }
+
   .md\:inline-block {
     display: inline-block;
   }
@@ -2851,6 +2908,10 @@ select {
 
   .md\:grid {
     display: grid;
+  }
+
+  .md\:hidden {
+    display: none;
   }
 
   .md\:h-24 {
