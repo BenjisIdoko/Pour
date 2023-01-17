@@ -28,23 +28,29 @@
             <div class="flex flex-col flex-grow p-4 overflow-auto">
                 <a class="flex items-center flex-shrink-0 h-10 px-2 text-base font-medium rounded hover:bg-gray-300"
                     href="#">
-                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
                     </svg>
-                    <span class="leading-none ml-2">Dashboard</span>
+                    <span class="leading-none ml-2 text-[#1c3359] font-bold ">Dashboard</span>
+                </a>
+                <a class="flex items-center flex-shrink-0 h-10 px-2 text-base font-medium rounded hover:bg-gray-300"
+                    href="all-users.html">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24">
+                        <g fill="none">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M8 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" fill="currentColor"></path>
+                          <path d="M11 14a1 1 0 0 1 1 1v6h2v-6a3 3 0 0 0-3-3H5a3 3 0 0 0-3 3v6h2v-6a1 1 0 0 1 1-1h6z" fill="currentColor"></path>
+                          <path d="M22 11h-6v2h6v-2z" fill="currentColor"></path>
+                          <path d="M16 15h6v2h-6v-2z" fill="currentColor"></path>
+                          <path d="M22 7h-6v2h6V7z" fill="currentColor"></path>
+                        </g>
+                      </svg>
+                    <span class="leading-none ml-2">All Registrant</span>
                 </a>
                 <a class="flex items-center flex-shrink-0 h-10 px-2 text-base font-medium rounded hover:bg-gray-300"
                     href="#">
-                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                    </svg>
-                    <span class="leading-none ml-2">Applications</span>
-                </a>
-                <a class="flex items-center flex-shrink-0 h-10 px-2 text-base font-medium rounded hover:bg-gray-300"
-                    href="#">
-                    <span class="leading-none">Item 3</span>
+                    <span class="leading-none">Trainings</span>
                 </a>
                 <a class="flex items-center flex-shrink-0 h-10 px-2 text-base font-medium rounded hover:bg-gray-300"
                     href="#">
@@ -59,13 +65,13 @@
                     <span class="leading-none">Item 6</span>
                 </a>
                 <a class="flex items-center flex-shrink-0 h-10 px-3 mt-auto text-sm font-medium bg-gray-200 rounded hover:bg-gray-300"
-                    href="#">
+                    href="user-form.html">
                     <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
                     </svg>
-                    <span class="ml-2 leading-none">Add New Applicant</span>
+                    <span class="ml-2 leading-none">Add New Registrant</span>
                 </a>
             </div>
 
@@ -98,7 +104,7 @@
                 </span>
 
                 <button class="h-10 px-4 ml-auto text-base font-medium rounded hover:bg-gray-300">
-                    Action 1
+                    Log In
                 </button>
                 <button class="h-10 px-4 ml-2 text-sm font-medium bg-gray-200 rounded hover:bg-gray-300">
                     Action 2
@@ -110,9 +116,9 @@
                     </div>
                     <div
                         class="absolute right-0 flex-col items-start hidden w-40 pb-1 mt-5 bg-white border rounded-lg border-gray-300 shadow-lg group-focus:flex">
-                        <a class="w-full px-4 py-2 text-left hover:bg-gray-300" href="#">Menu Item 1</a>
-                        <a class="w-full px-4 py-2 text-left hover:bg-gray-300" href="#">Menu Item 1</a>
-                        <a class="w-full px-4 py-2 text-left hover:bg-gray-300" href="#">Menu Item 1</a>
+                        <a class="w-full px-4 py-2 text-left hover:bg-gray-300" href="#">Settings</a>
+                        <a class="w-full px-4 py-2 text-left hover:bg-gray-300" href="login.html">Login</a>
+                        <a class="w-full px-4 py-2 text-left hover:bg-gray-300" href="login.html">log Out</a>
                     </div>
                 </button>
 
@@ -165,7 +171,7 @@
                         <p class="mb-3 font-normal text-gray-500">Go to this step by step
                             guideline process on how to certify for your weekly benefits:</p>
                         <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
-                            See our guideline
+                            View Data
                             <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -193,7 +199,7 @@
                         <p class="mb-3 font-normal text-gray-500">Go to this step by step
                             guideline process on how to certify for your weekly benefits:</p>
                         <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
-                            See our guideline
+                            View Data
                             <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -212,7 +218,7 @@
                     <div class="py-8">
                         <div class="flex justify-between items-center">
                             <h2 class="text-2xl font-semibold leading-tight">Recent Registrants</h2>
-                            <a href=""
+                            <a href="all-users.html"
                                 class="inline-block px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-[#1c3359] hover:bg-indigo-500 focus:outline-none focus:shadow-outline">
                                 View All
                             </a>
